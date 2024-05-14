@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Album 1</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    h1, h2, h3 {
+      color: #007bff; /* Blue header color */
+    }
+    p{
+      color: #fff;
+    }
+img{
+  height: 300px;
+  width: 300px;
+}
+    .album-details {
+      background-image: url(back.jpg);
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .album-details h1 {
+      margin-bottom: 20px;
+    }
+    .album-details p {
+      margin-bottom: 10px;
+    }
+    .album-cover img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .album-songs {
+      margin-top: 30px;
+    }
+    .album-songs ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .album-songs ul li {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .album-songs ul li:hover {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="index.html">Music</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="album-details">
+    <h1>Album 1</h1>
+    <p><strong>Artist:</strong> GV PRAKASH</p>
+    <p><strong>Release Date:</strong> 12 November 2020</p>
+    <div class="album-cover">
+      <img src="Soorarai Pottru - Official Trailer.jpg" alt="Album 1">
+    </div>
+    <div class="album-songs">
+      <h3>Songs:</h3>
+      <ul>
+        <li><audio controls><source src="Veyyon Silli.mp3" type="audio/mp3"></audio></li>
+        <li><audio controls><source src="Usurey.mp3" type="audio/mp3"></audio></li>
+        <li><audio controls><source src="Kaattu Payale.mp3" type="audio/mp3"></audio></li>
+        <!-- Add more songs here -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
